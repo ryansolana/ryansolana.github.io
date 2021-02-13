@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Projects-Clean.css">
@@ -23,88 +24,101 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="box-shadow: 0px 0px 16px 4px rgb(218,218,218);">
+<body id="home">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean" style="box-shadow: 0px 0px 16px 4px rgb(218,218,218);">
         <div class="container"><a class="navbar-brand" href="#">Ryan Solana</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact Me</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/ryansolana" target="_blank">Github</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container" style="margin-top: 65px;margin-bottom: 60px;">
         <div class="row">
-            <div class="col-sm-12 col-xl-5 offset-xl-0"><img class="rounded-circle img-fluid d-flex d-lg-flex flex-shrink-0 m-auto justify-content-lg-center" src="assets/img/Screenshot_3.png" style="max-height: 100%;padding-bottom: 30px;"></div>
+            <div class="col-sm-12 col-xl-5 offset-xl-0" style="height: 258px;"><img class="rounded-circle img-fluid d-flex d-lg-flex flex-shrink-0 m-auto justify-content-lg-center" src="assets/img/Screenshot_3.png" style="max-height: 100%;padding-bottom: 30px;"></div>
             <div class="col">
-                <h1 style="border-style: none;">Hi I'm <strong>Ryan Solana</strong></h1>
+                <h1 style="border-style: none;"><strong>Ryan Solana</strong></h1>
                 <p style="border-color: rgb(92,92,92);color: rgb(126,125,125);font-family: Raleway, sans-serif;font-size: 20px;"><strong>front end developer</strong></p>
-                <p style="border-color: rgb(92,92,92);color: rgb(65,65,65);font-size: 16px;font-family: Actor, sans-serif;">I enjoy getting stuff done. Always a student and always learning. Check out my stuff to learn more about my journey as a software developer!</p><button class="btn btn-dark" type="button" style="font-size: 12;margin-right: 10px;">Github</button>
-                <button
-                    class="btn btn-primary" type="button" style="font-size: 12;border-style: none;">LinkedIn</button>
-            </div>
-        </div>
-    </div>
-    <div class="highlight-phone" style="background-color: rgb(255,248,186);border: -28px solid rgb(255,245,0);box-shadow: 0px 0px 16px 4px rgb(218,218,218);filter: contrast(90%);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="intro">
-                        <h2 style="font-size: 46px;color: rgb(50,50,50);">Website Under Construction</h2>
-                        <p style="color: rgb(64,64,64);font-size: 17px;">Hey! I'm still working on this portfolio website. Check back later if you're interested in seeing the final result!<br><br>Meanwhile, you can see what I've filled out at the bottom for now.&nbsp; It's my first time putting together
-                            a portfolio, so feel free to send me advice at <strong>ryanasolana@gmail.com </strong>:)</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="d-none d-md-block iphone-mockup"><img class="device" src="assets/img/iphone.svg">
-                        <div class="screen"></div>
-                    </div>
-                </div>
+                <p style="border-color: rgb(92,92,92);color: rgb(65,65,65);font-size: 16px;font-family: Actor, sans-serif;">At a young age, I have always been interested in creating things and understanding how things operate. Since then, I have cultivated this mindset into a passion of software development where I continuously develop my programming skills to make ideas come to life and research ways to utilize existing libraries, APIs, and frameworks to enhance this workflow.<br></p>
             </div>
         </div>
     </div>
     <div class="features-boxed" style="background-color: rgb(243,248,255);">
-        <div class="container">
+        <div class="container" id="skills">
             <div class="intro">
-                <h2 class="text-center" id="skills" style="margin-bottom: 20px;">My Skills</h2>
+                <h2 class="text-center" style="margin-bottom: 20px;padding: 120px 0px 0px;">My Skills</h2>
                 <p class="text-center" style="color: rgb(91,91,91);font-family: Actor, sans-serif;">Here's what I've learned in my software development journey so far</p>
             </div>
             <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 item">
-                    <div class="box"><i class="fas fa-code icon"></i>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 offset-xl-0 item">
+                    <div class="box" style="padding: 20px;"><i class="fas fa-code icon"></i>
                         <h3 class="name">Languages</h3>
-                        <p class="description" style="color: rgb(112,112,112);"><strong>C++&nbsp; &nbsp;Java</strong><br>Applied understanding of OOP paradigm to create front end applications using both languages on the Windows platform<br><br><strong>Javascript</strong><br>Learned for front and backend web
-                            applications<br><br><strong>HTML&nbsp; &nbsp;CSS</strong><br>Learned in order to implement design wireframes for frontend applications.&nbsp;<br><br></p>
+                        <ul class="list-group">
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">C++</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">Java</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>Javascript</span></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 item">
-                    <div class="box"><i class="material-icons icon">web</i>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 offset-xl-0 item">
+                    <div class="box" style="padding: 20px;"><i class="material-icons icon">web</i>
                         <h3 class="name">Web Development</h3>
-                        <p class="description" style="color: rgb(112,112,112);"><strong>Vanilla JS</strong><br>Wrote in Javascript to develop interaction and validation logic for web applications. Used Fetch API in order to perform HTTP requests to from backend servers.&nbsp;<br><br><strong>&nbsp;React&nbsp; &nbsp;&nbsp;&nbsp;Redux</strong><br>Used
-                            create-react-app boilerplate and leveraged Redux libraries for state management when building user interfaces for the web.<br><br><strong>&nbsp;Design Tools: Figma, Adobe XD, Bootstrap Studio</strong><br>Applied industry standard
-                            design principles to develop wireframes and mockups for web-based applications for multiple viewports<br><br></p>
+                        <ul class="list-group">
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>HTML5</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">CSS3</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">NodeJS</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>React</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 item">
+                    <div class="box" style="padding: 20px;"><i class="fa fa-database icon"></i>
+                        <h3 class="name">Backend and Database</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">MongoDB</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>Cloud Firestore</span></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 item">
-                    <div class="box"><i class="fa fa-database icon"></i>
-                        <h3 class="name">Backend Development</h3>
-                        <p class="description" style="color: rgb(112,112,112);"><strong>Node.js + Express.js</strong><br>Experience with building RESTful APIs to request data from NoSQL databases<br><br><strong>&nbsp;MongoDB</strong><br>Knowledge of NoSQL databases and optimization strategies<br><br><strong>&nbsp;Google Firebase</strong><br>Learned
-                            in order to quickly setup accessible database for full stack applications, utilizing Firestore &amp; Firebase library functions for HTTP requests<br><br></p>
+                    <div class="box" style="padding: 20px;"><i class="fas fa-mobile-alt icon"></i>
+                        <h3 class="name">Mobile Development</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">Android Studio</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>React Native</span></li>
+                        </ul>
                     </div>
                 </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 item">
+                    <div class="box" style="padding: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="icon">
+                            <path d="M7 7V11H11V7H7Z" fill="currentColor"></path>
+                            <path d="M13 7H17V11H13V7Z" fill="currentColor"></path>
+                            <path d="M13 13V17H17V13H13Z" fill="currentColor"></path>
+                            <path d="M7 13H11V17H7V13Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H21V21H3V3ZM5 5V19H19V5H5Z" fill="currentColor"></path>
+                        </svg>
+                        <h3 class="name">User Interface Design</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item" style="padding: 5px 20px;"><span style="padding: 5px 20px;">Figma</span></li>
+                            <li class="list-group-item" style="padding: 5px 20px;"><span>Adobe XD</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
     <div class="projects-clean">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center" id="projects" style="margin-bottom: 25px;font-size: 32px;">Projects I've Worked On</h2>
-                <p class="text-center">Some projects that I've made in the past year</p>
+                <h2 class="text-center" id="projects" style="margin-bottom: 25px;font-size: 32px;padding: 120px 0px 0px;">Projects I've Worked On</h2>
+                <p class="text-center">Some projects that I've worked on in the past year</p>
             </div>
         </div>
     </div>
@@ -113,54 +127,30 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row projects">
-                        <div class="col-sm-12 col-lg-4 col-xl-12 offset-xl-0 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="rounded img-fluid" src="assets/img/desk.jpg">
+                        <div class="col-sm-12 col-lg-4 col-xl-12 offset-xl-0 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="rounded img-fluid" src="assets/img/SSLMS_logo.png" style="width: 300px;height: 300px;">
                             <h3 class="name" style="margin-top: 20px;font-size: 25px;"><strong>SimpleSchoolLMS</strong></h3>
-                            <p class="description" style="color: rgb(96,96,96);"><strong>Clean and minimalistic learning management system</strong></p>
-                            <p class="description" style="font-family: Actor, sans-serif;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><button class="btn btn-primary" type="button" style="margin-right: 10px;">Demo</button>
-                            <button
-                                class="btn btn-dark" type="button">See on Github</button>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 col-xl-12 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="img-fluid" src="assets/img/desk.jpg">
-                            <h3 class="name" style="margin-top: 20px;font-size: 25px;">Project Name</h3>
-                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><button class="btn btn-primary" type="button" style="margin-right: 10px;">Demo</button>
-                            <button
-                                class="btn btn-dark" type="button">See on Github</button>
+                            <p class="description" style="color: rgb(96,96,96);"><strong>Clean and minimalist learning management system</strong></p>
+                            <p class="description" style="font-family: Actor, sans-serif;">A simple LMS platform using React, React-Redux, Materialize, and Cloud Firestore. Teachers are able to upload announcements, assignments and drop box links, and provide grades to specific students in which they are able to view.</p><a href="https://github.com/ryansolana/SimpleSchoolLMS" target="_blank"><button class="btn btn-dark" type="button">See on Github</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row projects">
-                        <div class="col-sm-12 col-lg-4 col-xl-12 offset-xl-0 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="rounded img-fluid" src="assets/img/desk.jpg">
+                        <div class="col-sm-12 col-lg-4 col-xl-12 offset-xl-0 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="rounded img-fluid" src="assets/img/AtListLogo.png" style="height: 300px;width: 300px;">
                             <h3 class="name" style="margin-top: 20px;font-size: 25px;"><strong>AtList</strong></h3>
                             <p class="description" style="color: rgb(96,96,96);"><strong>Robust social cataloging application for movies, videos, and books</strong></p>
-                            <p class="description" style="font-family: Actor, sans-serif;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><button class="btn btn-primary" type="button" style="margin-right: 10px;">Demo</button>
-                            <button
-                                class="btn btn-dark" type="button">See on Github</button>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 col-xl-12 item" style="margin-top: 20px;margin-bottom: 20px;"><img class="img-fluid" src="assets/img/desk.jpg">
-                            <h3 class="name" style="margin-top: 20px;font-size: 25px;">Project Name</h3>
-                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><button class="btn btn-primary" type="button" style="margin-right: 10px;">Demo</button>
-                            <button
-                                class="btn btn-dark" type="button">See on Github</button>
+                            <p class="description" style="font-family: Actor, sans-serif;">A social cataloging application created using React, React Context, Bootstrap3, and Cloud Firestore. Users are able to search for detailed information on their favorite movies, videos, and books to store into a catalog which can then be saved and shared with their friends on the platform.<br><br>APIs used: TMDb, Google API for Books</p><a href="https://github.com/ryansolana/Atlist-SocialCatalogApp" target="_blank"><button class="btn btn-dark" type="button">See on Github</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contact-clean" style="background-color: rgb(243,248,255);">
-        <form method="post" style="max-width: 700px;">
-            <h2 class="text-center" id="contact" style="margin-bottom: 7px;color: rgb(61,65,68);">I'd love to hear from you!</h2>
-            <p class="description" style="text-align: center;margin-bottom: 36px;color: rgb(119,119,119);">Feel free to send me a message about anything.</p>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-            <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
-            <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
-            <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
-        </form>
+    <div class="social-icons" style="padding: 60px 0px;"><a href="https://github.com/ryansolana" target="_blank"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/ryan-solana-28155714a/" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="mailto:ryanasolana@gmail.com" target="_blank"><i class="icon ion-email"></i></a></div>
+    <div class="footer-basic" style="padding: 10px 0px;">
+        <p class="copyright">Ryan Solana © 2021</p>
+        <footer></footer>
     </div>
-    <div class="social-icons"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
